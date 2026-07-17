@@ -1,0 +1,276 @@
+/* =====================================
+   Fade
+===================================== */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes fadeOut {
+
+    from {
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =====================================
+   Result Card
+===================================== */
+
+@keyframes resultAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+.result-card {
+
+    animation:
+        resultAppear
+        .45s
+        ease;
+
+}
+
+
+/* =====================================
+   Loading Ring
+===================================== */
+
+@keyframes rotateLoader {
+
+    from {
+
+        transform:
+            rotate(0deg);
+
+    }
+
+    to {
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+.loader {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    border: 5px solid rgba(255,255,255,.45);
+
+    border-top-color: var(--primary);
+
+    animation:
+
+        rotateLoader
+
+        .8s
+
+        linear
+
+        infinite;
+
+}
+
+
+/* =====================================
+   Loading Overlay
+===================================== */
+
+.loading-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    backdrop-filter: blur(12px);
+
+    background:
+
+        rgba(235,248,250,.45);
+
+    z-index: 9999;
+
+    transition:
+
+        opacity
+
+        .25s;
+
+}
+
+.loading-overlay.hidden {
+
+    display: none;
+
+}
+
+
+.loading-card {
+
+    width: 240px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: var(--radius-card);
+
+    background: var(--glass);
+
+    border:
+
+        1px solid
+
+        rgba(255,255,255,.6);
+
+    box-shadow:
+
+        var(--shadow);
+
+    backdrop-filter:
+
+        blur(18px);
+
+}
+
+.loading-card p {
+
+    margin-top: 20px;
+
+    color: var(--text);
+
+}
+
+
+/* =====================================
+   Button
+===================================== */
+
+button {
+
+    transition:
+
+        background var(--transition),
+
+        transform .08s,
+
+        box-shadow var(--transition);
+
+}
+
+button:active {
+
+    transform:
+
+        scale(.97);
+
+}
+
+
+/* =====================================
+   Hover
+===================================== */
+
+.glass-card {
+
+    transition:
+
+        transform var(--transition),
+
+        box-shadow var(--transition);
+
+}
+
+.glass-card:hover {
+
+    transform:
+
+        translateY(-2px);
+
+    box-shadow:
+
+        var(--shadow-hover);
+
+}
+
+
+/* =====================================
+   Search Result
+===================================== */
+
+.search-item {
+
+    animation:
+
+        fadeIn
+
+        .2s;
+
+}
+
+
+/* =====================================
+   Candidate
+===================================== */
+
+.candidate-item {
+
+    animation:
+
+        fadeIn
+
+        .25s;
+
+}
