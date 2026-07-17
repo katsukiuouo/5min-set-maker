@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   const total = formatTotal(videos);
   const count = videos.length;
 
-  const title = "10分セットメーカー";
+  const title = "5分セットメーカー";
   const description = `${count}本 / 合計 ${total}`;
   const imageUrl = `${origin}/api/og?id=${encodeURIComponent(id)}`;
   const pageUrl = `${origin}/api/share?id=${encodeURIComponent(id)}`;
@@ -45,7 +45,7 @@ export default async function handler(req, res) {
 <meta http-equiv="refresh" content="0;url=${appUrl}">
 </head>
 <body>
-<p>10分セットメーカーを開いています...</p>
+<p>5分セットメーカーを開いています...</p>
 <script>
 location.href = ${JSON.stringify(appUrl)};
 </script>
