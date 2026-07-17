@@ -1,5 +1,5 @@
 const STORAGE_KEY = "ten-minute-set-maker";
-const RESULT_STORAGE_KEY = "ten-minute-set-maker-results";
+const RESULT_STORAGE_KEY = "five-minute-set-maker-results";
 
 let candidateVideos = [];
 
