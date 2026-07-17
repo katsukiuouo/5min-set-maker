@@ -1,0 +1,87 @@
+:root {
+
+    /* =========
+       Color
+    ========= */
+
+    --primary: #72d8c9;
+    --primary-dark: #56c7b6;
+
+    --secondary: #9fd8ff;
+
+    --background-top: #e8fbf8;
+    --background-bottom: #eef8ff;
+
+    --white: #ffffff;
+
+    --text: #24323f;
+    --sub-text: #607284;
+
+    --border: rgba(255,255,255,.45);
+
+    --glass: rgba(255,255,255,.48);
+
+    --glass-hover: rgba(255,255,255,.65);
+
+    --shadow:
+        0 10px 30px rgba(53,91,115,.12);
+
+    --shadow-hover:
+        0 18px 45px rgba(53,91,115,.18);
+
+    --danger: #ff7676;
+
+    --success: #6dd6a5;
+
+    /* =========
+       Radius
+    ========= */
+
+    --radius-large: 28px;
+
+    --radius-card: 24px;
+
+    --radius-button: 18px;
+
+    --radius-small: 12px;
+
+    /* =========
+       Space
+    ========= */
+
+    --space-xs: 6px;
+
+    --space-s: 12px;
+
+    --space-m: 20px;
+
+    --space-l: 32px;
+
+    --space-xl: 48px;
+
+    /* =========
+       Font
+    ========= */
+
+    --font-main:
+        "Inter",
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+
+    --title-size: 2rem;
+
+    --h2-size: 1.35rem;
+
+    --body-size: 1rem;
+
+    --small-size: .9rem;
+
+    /* =========
+       Transition
+    ========= */
+
+    --transition:
+        .25s ease;
+
+}
