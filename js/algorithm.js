@@ -2,7 +2,7 @@
    Constants
 ========================================== */
 
-const TARGET_SECONDS = 600;
+const TARGET_SECONDS = 300;
 
 const MAX_RESULT_COUNT = 20;
 
